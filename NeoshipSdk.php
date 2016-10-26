@@ -334,12 +334,13 @@ class NeoshipSdk
     }
     
     /**
-     * Returns package with given ID, returns all for current user if no ID is given
+     * Returns package with given ID, returns all for current user if no ID is given. 
+     * If $ref is set, return all packages with given reference numbers.
      * @param  [int]      $id   package id
-     * @param  [array]      $ref   packages
+     * @param  [array]    $ref  List of reference numbers to obtain
      * @return [object]
      */
-    public function apiGetPackage($id = null, $ref = NULL)
+    public function apiGetPackage($id = null, $ref = null)
     {
         $_SESSION['apiName'] = 'getPackage';
         $_SESSION['data1'] = $id;
