@@ -441,7 +441,7 @@ class NeoshipSdk
             }
         } else {
             header("Content-type:application/pdf");
-            header("Content-Disposition:attachment;filename=stickers-" . date('Y-m-d'));
+            header("Content-Disposition:attachment;filename=stickers-" . date('Y-m-d') . '.pdf');
             echo($result);
             die();
         }
@@ -469,7 +469,7 @@ class NeoshipSdk
             }
         } else {
             header("Content-type:application/pdf");
-            header("Content-Disposition:attachment;filename=acceptance-" . date('Y-m-d'));
+            header("Content-Disposition:attachment;filename=acceptance-" . date('Y-m-d') . '.pdf');
             echo($result);
             die();
         }
