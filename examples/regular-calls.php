@@ -56,5 +56,5 @@ for ($i = 1; $i <= $packageCount; $i++) {
         $packagedata['package']['mainPackageNumber'] = (isset($packagedata['package']['mainPackageNumber']))? $packagedata['package']['mainPackageNumber'] : $variableNumber . 1;
     }
     // sends each subpackage separately
-    $neoship->apiPostPackage('40272', $packagedata);
+    $neoship->apiPostPackage($packagedata);
 }
