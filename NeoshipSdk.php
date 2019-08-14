@@ -42,7 +42,7 @@ class NeoshipSdk
      * URL for API.
      * @var [string]
      */
-    private $apiUrl = 'https://www.neoship.sk';
+    private $apiUrl = 'https://api.neoship.sk';
     
     /**
      * constructor
@@ -151,7 +151,7 @@ class NeoshipSdk
 
     private function getRestUrl()
     {
-        return $this->getApiUrl() . '/api/rest';
+        return $this->getApiUrl();
     }
 
     private function getOauthUrl()
